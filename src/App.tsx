@@ -1,15 +1,6 @@
 import { person } from "./data";
+import { convertValuesToString } from "./utils";
 import "./app.css";
-
-type AnyObject = {
-  [key: string]: string | number | boolean;
-};
-
-const convertValuesToString = (obj: AnyObject): AnyObject => {
-  return Object.fromEntries(
-    Object.entries(obj).map(([key, value]) => [key, String(value)])
-  );
-};
 
 const App = () => {
   const convertedPerson = convertValuesToString(person);
