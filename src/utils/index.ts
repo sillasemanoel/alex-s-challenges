@@ -3,7 +3,13 @@ type AnyObject = {
 };
 
 export const convertValuesToString = (obj: AnyObject): AnyObject => {
-  return Object.fromEntries(
-    Object.entries(obj).map(([key, value]) => [key, String(value)])
-  );
+  const newObj: AnyObject = {};
+
+  for (const key in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+      newObj[key] = String(obj[key]);
+    }
+  }
+
+  return newObj;
 };

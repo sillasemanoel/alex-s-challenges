@@ -2,7 +2,7 @@ import { person } from "./data";
 import { convertValuesToString } from "./utils";
 import "./app.css";
 
-const App = () => {
+export default function App() {
   const convertedPerson = convertValuesToString(person);
 
   return (
@@ -36,6 +36,4 @@ const App = () => {
       </div>
     </main>
   );
-};
-
-export default App;
+}
