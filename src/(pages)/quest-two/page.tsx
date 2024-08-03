@@ -1,16 +1,16 @@
 import { names } from "./data";
 import { countLetters } from "./utils";
 
-export default function App() {
+export default function QuestionTwo() {
   const result = countLetters(names);
 
   return (
-    <div>
+    <main>
       {Object.entries(result).map(([name, count]) => (
         <div key={name}>
           {name} = {count}
         </div>
       ))}
-    </div>
+    </main>
   );
 }
