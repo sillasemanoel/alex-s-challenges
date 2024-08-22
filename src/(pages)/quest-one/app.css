@@ -1,0 +1,14 @@
+main {
+  display: flex;
+  gap: 3rem;
+}
+
+main > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
