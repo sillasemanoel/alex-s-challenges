@@ -1,8 +1,6 @@
-# Desafios de [Alex Alan Nunes](https://github.com/alexalannunes) (React)
+# Alex's Challeges (React)
 
 <img src="./alex-s-challnges.png" >
-
-## Descrição
 
 Este projeto contém uma série de desafios propostos por [Alex Alan Nunes](https://github.com/alexalannunes). Cada desafio está separado em diferentes páginas dentro do diretório `(pages)`, e cada um aborda diferentes aspectos do desenvolvimento com React e TypeScript.
 
